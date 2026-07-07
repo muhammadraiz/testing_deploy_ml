@@ -1,0 +1,12 @@
+# PENTING: samakan versi scikit-learn (dan numpy) dengan yang dipakai saat training,
+# karena model.joblib sensitif terhadap versi sklearn saat dimuat ulang. Cek di notebook:
+#     import sklearn, numpy; print(sklearn.__version__, numpy.__version__)
+# lalu pin, contoh: scikit-learn==1.6.1  dan  numpy==2.1.3
+
+fastapi
+uvicorn[standard]
+pandas
+numpy
+scikit-learn==1.8.0
+joblib
+imbalanced-learn==0.14.2

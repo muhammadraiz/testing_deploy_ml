@@ -1,0 +1,32 @@
+{
+  "features": [
+    "Internet_Access",
+    "Attendance_Rate",
+    "Assignment_Delay_Days",
+    "Travel_Time_Minutes",
+    "Part_Time_Job",
+    "Stress_Index",
+    "GPA"
+  ],
+  "categorical_features": [
+    "Internet_Access",
+    "Part_Time_Job"
+  ],
+  "numeric_features": [
+    "Attendance_Rate",
+    "Assignment_Delay_Days",
+    "Travel_Time_Minutes",
+    "Stress_Index",
+    "GPA"
+  ],
+  "example_input": {
+    "Internet_Access": "Yes",
+    "Attendance_Rate": 81.9,
+    "Assignment_Delay_Days": 2,
+    "Travel_Time_Minutes": 30.3,
+    "Part_Time_Job": "No",
+    "Stress_Index": 5.5,
+    "GPA": 2.34
+  },
+  "note": "Kirim data mentah; imputasi/one-hot/scaling ditangani di dalam pipeline. Bangun DataFrame dgn urutan kolom = 'features', lalu model.predict / predict_proba."
+}
